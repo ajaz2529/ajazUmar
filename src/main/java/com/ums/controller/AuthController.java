@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //@RequiredArgsConstructor
@@ -52,6 +53,12 @@ public class AuthController {
     public AppUser getCurrentProfile(@AuthenticationPrincipal AppUser user){
         return user;
     }
+    @GetMapping("/getuser")
+    public List<AppUser> getUsers(){
+
+        return new ArrayList<>();
+    }
+
 
 
 
