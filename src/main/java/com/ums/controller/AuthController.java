@@ -59,7 +59,7 @@ public class AuthController {
         return new ArrayList<>();
     }
     @GetMapping("/myuser")
-    public List<AppUser> getUsers(){
+    public List<AppUser> getmyUsers(){
 
         return new ArrayList<>();
     }
